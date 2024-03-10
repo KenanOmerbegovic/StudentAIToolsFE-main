@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap')
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @apply font-cabin;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
+}
+
+/* INPUTS */
+
+.input {
+  @apply p-3 rounded-xl bg-primaryShade2 border border-solid border-primaryTint2 outline-none text-white text-base focus:border-secondaryColor
+}
+
+.input:placeholder {
+  @apply text-white/50
+}
+
+.label {
+  @apply text-sm text-text
+}
+
+.link {
+  @apply text-secondaryColor font-bold underline
+}
+
+/* BUTTONS */
+
+.button {
+  @apply rounded-xl py-3 px-5 text-center transition text-base uppercase font-bold cursor-pointer border-none
+}
+
+.button.primary {
+  @apply bg-secondaryColor text-white;
+}
+
+.button.primary:hover {
+  @apply bg-white text-secondaryColor
+}
+
+.button.secondary {
+  @apply bg-primaryTint2/50 text-white
+}
+
+.button.secondary:hover {
+  @apply bg-primaryTint2
+}
+
+.button.special {
+  color: white;
+  background: rgb(203,72,249);
+  background: linear-gradient(150deg, rgba(203,72,249,1) 0%, rgba(168,47,90,1) 56%, rgba(190,92,36,1) 100%);
+}
+
+.button.special:hover {
+  transform: translateY(-5px);
+}
+
+/* SIDEBAR ITEM */
+
+.sidebarItem.active {
+  @apply bg-white
+}
+
+.sidebarItem.active span {
+  @apply text-primaryColor
+}
+
+/* GRADIENTS */
+
+.red-gradient {
+  background: rgb(246,84,84);
+  background: linear-gradient(150deg, rgba(246,84,84,1) 0%, rgba(159,21,21,1) 100%);
+}
+
+.blue-gradient {
+  background: rgb(84,237,246);
+  background: linear-gradient(150deg, rgba(84,237,246,1) 0%, rgba(57,71,144,1) 100%);
+}
+
+.green-gradient {
+  background: rgb(32,210,40);
+  background: linear-gradient(150deg, rgba(32,210,40,1) 0%, rgba(85,190,76,1) 100%);
+}
+
+.lime-gradient {
+  background: rgb(45,149,111);
+  background: linear-gradient(150deg, rgba(45,149,111,1) 0%, rgba(38,174,142,1) 100%);
+}
+
+.orange-gradient {
+  background: rgb(246,211,84);
+  background: linear-gradient(150deg, rgba(246,211,84,1) 0%, rgba(159,104,21,1) 100%);
+}
+
+.bright-yellow-gradient {
+  background: rgb(142,135,33);
+  background: linear-gradient(150deg, rgba(142,135,33,1) 0%, rgba(181,173,48,1) 100%);
+}
+
+.grey-gradient {
+  background: rgb(74,74,74);
+  background: linear-gradient(150deg, rgba(74,74,74,1) 0%, rgba(115,115,111,1) 100%);
+}
+
+.purple-gradient {
+  background: rgb(119,45,181);
+  background: linear-gradient(150deg, rgba(119,45,181,1) 0%, rgba(164,77,219,1) 100%);
+}
